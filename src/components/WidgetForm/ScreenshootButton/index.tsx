@@ -34,7 +34,7 @@ export function ScreenshootButton({ onScreenshot, screenshot, isSending }: Scree
           type="button"
           className='p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100
           transition-colors duration-300 ease-in-out disabled:opacity-50 disabled:hover:text-zinc-400'
-          style={{ backgroundImage: `url(${screenshot})`, backgroundSize: 180, backgroundPosition: 'right bottom' }}
+          style={{ backgroundImage: `url(${screenshot})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           onClick={handleTakescreenshoot}
           disabled={isSending}
         >
